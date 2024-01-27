@@ -7,7 +7,7 @@ WORKDIR /app
 
 # Copy go.mod and go.sum to download dependencies.
 # Copying this separately prevents re-downloading dependencies on every build.
-COPY go.mod go.sum ./
+COPY go.mod ./
 
 # Download dependencies.
 RUN go mod download
